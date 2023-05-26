@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz2.html</title>
+    <style>
+        div {
+            display: flex;
+            border-top: 3px solid #00B2CF;
+            margin: 50px 40px;
+            width: 1200px;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            cursor: pointer;
+        }
+        #none-drop {
+            justify-content: space-evenly;
+            border-collapse: collapse;
+            background-color: #061C25;
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-top: 0;
+            color: #FFFFFF;
+        }
+        #none-drop > li{
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 2px;
+        }
+        #none-drop > li:hover{
+            color:#00B2CF;
+            border-bottom: 3px solid #00B2CF;
+        }
+        #none-drop > .dropdown:hover > .dropdown_content {
+            display: block;
+            color:#FFFFFF;
+        }
+        .dropdown_content:hover {
+            text-decoration: underline;
+        }
+        .dropdown_content {
+            top: 57px;
+            padding: 0;
+            display: none;
+            position: absolute;
+        }  
+        .dropdown_content > li {
+            background-color: #123643;
+            font-weight: normal;
+            font-size: 0.9em;
+            position: relative;
+            width: auto;
+            text-align: left;
+            padding: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="none-drop">
+            <li>홈</li>
+            <li class="dropdown">기록실
+                <ul class="dropdown_content">
+                    <li>LoL 기록실-경기기록</li>
+                    <li>LoL 기록실-선수기록</li>
+                    <li>LoL 기록실-팀 통산</li>
+                    <li>LoL 기록실-선수 통산</li>
+                    <li>LoL 기록실-챔피언 픽/밴</li>
+                    <li>LoL 기록실-래더 랭킹</li>
+                    <li>LoL 프로팀 정보</li>
+                </ul>
+            </li>
+            <li>LCK 인벤</li>
+            <li class="dropdown">챔피언
+                <ul class="dropdown_content">
+                    <li>LoL 챔피언 정보</li>
+                    <li>챔피언 능력치 랭킹</li>
+                    <li>실시간 챔피언 평가</li>
+                </ul>
+            </li>
+            <li>카운터픽</li>
+            <li>공략</li>
+            <li>스킨갤러리</li>
+            <li>방송/영상</li>
+            <li class="dropdown">LoL DB
+                <ul class="dropdown_content">
+                    <li>시즌13 룬 시뮬</li>
+                    <li>시즌13 아이템 DB</li>
+                    <li>소환사 주문 DB</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
