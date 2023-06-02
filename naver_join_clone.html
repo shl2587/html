@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz1</title>
+
+</head>
+<body>
+
+    
+
+    <table align="center" height="50">
+        <tr>
+            <th style="color:#2DB400; font-size: 2em;"><h1>NAVER</h1></th>
+        </tr>
+        <tr>
+            <th align="left">아이디</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="id" required>
+                @naver.com
+            </td>
+        </tr>
+        
+
+        <tr>
+            <th align="left">비밀번호</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="pw" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">비밀번호 재확인</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="pw" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">이름</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="name" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">생년월일</th>
+        </tr>
+        <tr>
+            <td width="20">
+                <input type="number" name="year" placeholder="년(4자)" required>
+            </td>
+            <td>
+                <select name="month" id="month-select">
+                    <option value="">월</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="day" placeholder="일" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">성별</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="gender" id="gender-select" aria-placeholder="성별">
+                    <option value="">성별</option>
+                    <option value="01">남자</option>
+                    <option value="01">여자</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">본인 확인 이메일
+                <span style="color:lightgrey">(선택)</span></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" name="email" placeholder="선택입력" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th align="left">휴대전화</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="nationalnumber" id="nationalnumber-select">
+                    <option value="01">대한민국 +82</option>
+                    <option value="02">그리스 +30</option>
+                    <option value="03">스위스 +41</option>
+                    <option value="04">영국 +44</option>
+                    <option value="05">프랑스 +33</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="phonenumber" placeholder="전화번호 입력" required><button>인증번호 받기</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="certification_number" placeholder="인증번호 입력" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <button>가입하기</button>
+            </td>
+        </tr>
+        
+    </table>
+
+    <table align="center">
+        
+    </table>
+
+</body>
+</html>
