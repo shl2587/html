@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            color : black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            cursor: pointer;
+        }
+        #info_store {
+            font-size: 0.85em;
+        }
+        #function {
+            font-size: 0.85em;
+        }
+        #login {
+            font-size: 1.1em;
+            background-color: #1A73E8;
+            border: 0;
+            padding: 8px 27px;
+            border-radius: 5px;
+        }
+        #login:hover {
+            background-color: #1B66C9;
+        }
+        #a_button {
+            color: #FFFFFF;
+        }
+        #a_button:hover {
+            text-decoration: none;
+        }
+        .png{ 
+            display: flex;
+            justify-content: center;
+        }
+        .png > img {
+            width: 275px;
+            height: auto;
+            margin-top: 200px;
+            margin-bottom: 30px;
+        } 
+        input {
+            width: 500px;
+            outline: none;
+            border: 0;
+        }
+        input:hover {
+            outline: none;
+        }
+        .search {
+            display: flex;
+            justify-content: center;
+        }
+        .search > .icon {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #DFE1E5;
+            border-radius: 30px;
+            width: 580px;
+            height: 45px;
+            margin-bottom: 20px;
+        }
+        .search > .icon:hover {
+            box-shadow: 1px 1px 1px 1px #DCDCDC;
+        }
+        #p_button {
+            margin-bottom: auto;
+            display: flex;
+            justify-content: center;
+        }
+        #p_button > button {
+            font-weight: 0.2px;
+            width: 120px;
+            height: 50px;
+            background-color: #F8F9FA;
+            border: 0;
+        }
+        #p_button > button:hover {
+            border: 1px solid #DCDCDC;
+        }
+        #glasses {
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        #icons {
+            margin-right: 15px;
+            margin-top: 6px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+        .upfoot {
+            width: 1500px;
+            border-bottom: 1px solid #DCDCDC;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .downfoot {
+            width: 2000px;
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span id="info_store">
+            <a href="https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header">Google 정보</a>
+            &nbsp;
+            &nbsp;
+            <a href="https://store.google.com/KR/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko-KR">스토어</a>
+        </span>
+        <span id="function">
+            <a href="https://www.google.com/intl/ko/gmail/about/">Gmail</a>
+            &nbsp;
+            <a href="https://www.google.co.kr/imghp?hl=ko&ogbl">이미지</a>
+            &nbsp;
+            <a>🍔</a>
+            &nbsp;
+            <button id="login">
+                <a id="a_button" href="https://accounts.google.com/v3/signin/identifier?dsh=S67325545%3A1682397949792667&continue=https%3A%2F%2Fwww.google.co.kr%2F%3Fhl%3Dko&ec=GAZAmgQ&hl=ko&ifkv=AQMjQ7TSvLd93mK4Jhyo0PVMZq_1mzzxVKbRnr2vKHXPlwDhz9cKWFESg2VDoDA9P50AkVY6eFKLWQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin">로그인</a>
+            </button>
+        </span>
+    </header>
+    
+    <div class="png">
+        <img src="구글.png">
+    </div>
+    <div class="search">
+        <div class="icon">
+            <p id="glasses"><img src="그림1.png"></p>
+            <input type="search">
+            <p id="icons"><img src="그림2.png"></p>
+        </div>
+    </div>
+    <p id="p_button">
+        <button>Google검색</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>I'm Feeling Lucky</button>
+    </p>
+    <footer>
+        <div class="upfoot">
+            <p id="country">대한민국</p>
+        </div>
+        <div class="downfoot">
+            <a>광고</a>
+            &nbsp;
+            <a>비즈니스</a>
+            &nbsp;
+            <a>검색의 원리</a>
+        </div>
+    </footer>
+</body>
+</html>
